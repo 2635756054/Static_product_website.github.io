@@ -3,28 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>商品浏览网站</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>店铺商品展示</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><i class="fas fa-store"></i> 商品展示中心</h1>
-            <p>发现优质商品，尽享购物乐趣</p>
+    <header class="bg-light shadow-sm">
+        <div class="container py-3">
+            <h1 class="h3 mb-0">店铺商品</h1>
         </div>
     </header>
 
-    <main class="container">
-        <section class="products-grid" id="productsContainer">
-            <!-- 商品卡片将通过JavaScript动态加载 -->
-        </section>
+    <main class="container my-4">
+        <!-- 商品筛选 -->
+        <div class="row mb-4">
+            <div class="col-md-6">
+                <input type="text" class="form-control" id="searchInput" placeholder="搜索商品...">
+            </div>
+            <div class="col-md-3">
+                <select class="form-select" id="categoryFilter">
+                    <option value="">所有分类</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- 商品网格 -->
+        <div class="row g-4" id="productGrid">
+            <!-- 商品会通过JavaScript动态加载 -->
+        </div>
     </main>
 
-    <footer>
-        <p>© 2026 商品浏览网站 | 基于GitHub Pages构建</p>
-    </footer>
-
-    <script src="script.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
