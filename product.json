@@ -1,0 +1,37 @@
+[
+  {
+    "id": "PROD001",
+    "name": "智能手表",
+    "price": 1299.00,
+    "category": "电子产品",
+    "description": "高端智能手表，支持健康监测、运动追踪、消息提醒等功能。",
+    "images": [
+      "assets/images/products/watch1.jpg",
+      "assets/images/products/watch2.jpg"
+    ],
+    "specifications": {
+      "品牌": "品牌A",
+      "型号": "Watch Pro 2025",
+      "屏幕尺寸": "1.78英寸",
+      "电池续航": "7天",
+      "防水等级": "IP68"
+    }
+  },
+  {
+    "id": "PROD002",
+    "name": "无线耳机",
+    "price": 599.00,
+    "category": "电子产品",
+    "description": "真无线蓝牙耳机，降噪功能优秀，音质清晰。",
+    "images": [
+      "assets/images/products/earphone1.jpg"
+    ],
+    "specifications": {
+      "品牌": "品牌B",
+      "型号": "Buds Pro",
+      "蓝牙版本": "5.2",
+      "续航时间": "24小时",
+      "充电类型": "Type-C"
+    }
+  }
+]
