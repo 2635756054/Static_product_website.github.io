@@ -3,90 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>无线蓝牙耳机 - 商品详情</title>
-    <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1><i class="fas fa-store"></i> 商品详情</h1>
-            <p>了解更多产品信息</p>
-        </div>
-    </header>
-
-    <main class="container">
-        <a href="../index.html" class="back-button">
-            <i class="fas fa-arrow-left"></i> 返回商品列表
-        </a>
+    <div class="container my-5">
+        <a href="../index.html" class="btn btn-outline-secondary mb-4">返回列表</a>
         
-        <div class="product-detail">
-            <div class="product-header">
-                <span style="background:#e3f2fd;color:#1976d2;padding:0.3rem 0.8rem;border-radius:12px;">
-                    电子产品
-                </span>
-                <h1 style="margin-top:0.5rem;">无线蓝牙耳机</h1>
-                <div style="font-size:1.8rem;color:#e74c3c;font-weight:bold;margin:1rem 0;">
-                    ¥299
-                </div>
-            </div>
-            
-            <img src="../images/earphone.jpg" alt="无线蓝牙耳机" class="detail-image" 
-                 onerror="this.src='https://via.placeholder.com/800x400?text=商品图片'">
-            
-            <div style="margin: 2rem 0;">
-                <h2><i class="fas fa-info-circle"></i> 产品描述</h2>
-                <p style="margin-top:1rem;line-height:1.8;">
-                    这款无线蓝牙耳机采用最新蓝牙5.3技术，连接稳定快速。内置高品质扬声器单元，提供沉浸式音效体验。
-                    主动降噪功能可以有效过滤环境噪音，让您专注于音乐或通话。耳机单次充电可使用8小时，
-                    配合充电仓总续航可达30小时。轻巧人体工学设计，佩戴舒适稳固。
-                </p>
-                
-                <h2 style="margin-top:2rem;"><i class="fas fa-list-check"></i> 主要特点</h2>
-                <ul style="margin-top:1rem;padding-left:1.5rem;line-height:1.8;">
-                    <li>蓝牙5.3，连接稳定快速</li>
-                    <li>主动降噪技术，过滤环境噪音</li>
-                    <li>单次8小时，总续航30小时</li>
-                    <li>IPX5级防水，运动无忧</li>
-                    <li>触控操作，支持语音助手</li>
-                    <li>Type-C快速充电</li>
-                </ul>
-                
-                <h2 style="margin-top:2rem;"><i class="fas fa-clipboard-list"></i> 规格参数</h2>
-                <div style="margin-top:1rem;background:#f8f9fa;padding:1.5rem;border-radius:8px;">
-                    <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
-                        <div><strong>型号：</strong>BT-2026</div>
-                        <div><strong>重量：</strong>单耳4.5g</div>
-                        <div><strong>电池容量：</strong>耳机40mAh，充电仓400mAh</div>
-                        <div><strong>充电时间：</strong>1.5小时</div>
-                        <div><strong>频率响应：</strong>20Hz-20kHz</div>
-                        <div><strong>防水等级：</strong>IPX5</div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- WPS文件访问区域 -->
-            <div class="wps-section">
-                <h3><i class="fas fa-file-word"></i> 详细产品文档</h3>
-                <p>点击下方按钮查看或下载完整的产品规格书、用户手册等详细文档：</p>
-                <a href="../wps-files/product1-details.wps" class="wps-download" download>
-                    <i class="fas fa-download"></i> 下载产品详细文档 (.wps)
-                </a>
-                <p style="margin-top:0.5rem;font-size:0.9rem;color:#666;">
-                    如果浏览器不支持直接打开WPS文件，请右键链接选择"另存为"下载到本地查看
-                </p>
-            </div>
-            
-            <div style="margin-top:2rem;text-align:center;">
-                <a href="tel:400-123-4567" class="btn btn-primary" style="padding:0.8rem 2rem;">
-                    <i class="fas fa-phone"></i> 联系客服咨询
-                </a>
-            </div>
+        <div class="row" id="productDetail">
+            <!-- 商品详情会通过JavaScript动态加载 -->
         </div>
-    </main>
+    </div>
     
-    <footer>
-        <p>© 2026 商品浏览网站 | 基于GitHub Pages构建</p>
-    </footer>
+    <script src="../assets/js/product-detail.js"></script>
 </body>
 </html>
